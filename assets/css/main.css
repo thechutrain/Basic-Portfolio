@@ -1,0 +1,28 @@
+/*
+=============================================
+Layout
+=============================================
+*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  margin-bottom: 10px;
+  background-image: url("../images/wavegrid.png");
+  background-repeat: repeat;
+}
+
+
+/*
+=============================================
+Visualization / Debugging
+=============================================
+*/
+.wrapper{
+    border: 1px solid black;
+}
+img {
+  border: 2px dashed brown;
+}
