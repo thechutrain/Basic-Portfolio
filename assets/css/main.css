@@ -70,6 +70,7 @@ section{
   float: left;
   margin-top: 25px;
   margin-left: 50px;
+  margin-bottom: 25px;
 }
 
 /*
@@ -92,9 +93,23 @@ aside > h3 {
   width: 100%;
   text-align: center;
 }
-.logo-container > a > img {
+.logo-container > a {
   display: inline-block;
-  margin: 5px;
+  /*margin: 5px;*/
+  width: 30%;
+  /*overflow: auto;*/
+}
+.logo-container > a > img {
+  width: 100%;
+  border-radius: 15px;
+  /*display: inline-block;*/
+  /*margin: 5px;*/
+/*  width: 60px;
+  border-radius: 10px;*/
+}
+#icon-adjust{
+  padding: 3.5px;
+  border-radius: 0px;
 }
 
 /*
@@ -139,6 +154,44 @@ h2{
 
 /*
 =============================================
+About.html page
+=============================================
+*/
+#about-me > img {
+  float: left;
+  margin-right: 20px;
+}
+
+/*
+=============================================
+portfolio.html page
+=============================================
+*/
+#portfolio > article {
+  width: 250px;
+  position: relative;
+}
+#portfolio > article > h2 {
+  position: absolute;
+  bottom: 20px;
+  width: 250px;
+  /*text-align: center;*/
+}
+.project-banner{
+  /*color: white;*/
+  background: #4aaaa5;
+  padding: 10px;
+  width: 250px;
+  position: absolute;
+  bottom: 20px;
+}
+.project-banner > h2 {
+  color: white;
+  text-align: center;
+}
+
+/*
+=============================================
 Visualization / Debugging
 =============================================
 */
@@ -148,9 +201,9 @@ Visualization / Debugging
 section{
   border: 0.5px dotted black;
 }
-aside{
+/*aside{
   border: 2px double yellow;
 }
 img {
   border: 2px dashed brown;
-}
+}*/
