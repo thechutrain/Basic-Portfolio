@@ -168,8 +168,12 @@ portfolio.html page
 =============================================
 */
 #portfolio > article {
-  width: 250px;
+  width: 275px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   position: relative;
+  float: left;
 }
 #portfolio > article > h2 {
   position: absolute;
