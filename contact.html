@@ -9,5 +9,61 @@
 </head>
 <body>
 
+<!-- Top header with nav bar -->
+<div class="header-container">
+  <!-- Container for my name -->
+  <header id="logo">
+    <h1 id="logo-name">Alan Chu</h1>
+  </header>
+
+  <!-- Navigation bar here -->
+  <nav>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="container">
+  <section id="contact-me">
+    <!-- heading and horizontal line -->
+    <h1>Contact Me</h1>
+    <hr>
+    <form action="/" method="GET">
+      <div class="wrapper"><label for="name"> Name </label></div>
+      <div class="wrapper"><input type="text" name="user_name" /></div>
+      <div class="wrapper"><label for="email"> Email</label></div>
+      <div class="wrapper"><input type="email" name="user_email"></div>
+      <div class="wrapper"><label for="msg"> Message </label></div>
+      <div class="wrapper"><textarea id="msg" name="user_message"></textarea></div>
+      <button type="submit">Submit</button>
+      
+    </form>
+  </section>
+
+    <!-- Aside for connecting with me -->
+  <aside>
+    <h2>Connect with Me</h2>
+    <hr>
+    <div class="logo-container">
+      <!-- 3 icons -->
+      <a href="https://github.com/thechutrain" target="_blank">
+        <img src="assets/images/github_icon.svg" alt="github icon">
+      </a>
+      <a href="https://www.linkedin.com/in/alan-chu-25736012a?trk=nav_responsive_tab_profile_pic" target="_blank">
+        <img src="assets/images/linkedin_icon.svg" alt="linkedin icon">
+      </a>
+      <a href="http://stackoverflow.com/users/3134917/thechutrain" target="_blank">
+        <img id="icon-adjust" src="assets/images/stackoverflow_icon.svg" alt="stackoverflow icon">
+      </a>
+      <!-- <a href="#"><img src="holder.js/50x50"></a> -->
+      <!-- <a href="#"><img src="holder.js/50x50"></a>       -->
+    </div>
+
+  </aside>
+</div>
+
 </body>
 </html>
