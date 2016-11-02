@@ -6,17 +6,17 @@ Layout - General
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
+/*
 .header-container{
   width: 100%;
   overflow: auto;
   clear: both;
-}
+}*/
 
 .container {
   width: 100%;
   overflow: auto;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
   background-image: url("../images/wavegrid.png");
   background-repeat: repeat;
   clear: both;
@@ -27,39 +27,77 @@ Layout - General
 Layout - header + nav
 =============================================
 */
-header{
+.header {
+  background: #ffffff;
+  height: 50px;
+}
+.header:after{
+  clear: both;
+}
+.logo-wrapper{
+  width: 650px;
   margin-left: 50px;
-  /*padding-left: 20px;*/
-  padding: 20px;
-  background-color: #4aaaa5;
+  /*border: 1px solid red;*/
   float: left;
-  width: 175px;
-  position: relative;
 }
-nav {
-  /*display: block;*/
-  /*float: left;*/
-  position: absolute;
-  left: 750px;
-}
-/*nav > ul {
-  list-style: none;
-  background-color: #444;
+.logo-name {
+  color: white;
+  font-weight: 600;
+  background-color: #4aaaa5;
+  padding: 20px;
+  width: 250px;
   text-align: center;
-}*/
+  font-size: 28px;
+  line-height: 24px;
+}
+.nav-wrapper{
+  margin-left: 50px;
+  float: left;
+  /*overflow: auto;*/
+  position: relative;
+  max-height: 80px;
+  padding: 10px 0;
+}
+nav{
+  font-size: 12px;
+  /*position: absolute;*/
+  /*bottom: 0;*/
+}
+nav > ul {
+  list-style: none;
+  text-align: center;
+}
 nav > ul > li {
   display: inline-block;
   margin-left: 10px;
+  border-right: 3px gray solid;
+  line-height: 1px;
+}
+nav > ul > li:last-of-type {
+  border-right: none;
 }
 nav > ul > li > a {
   display: inline-block;
   text-decoration: none;
-  /*height: 30px;*/
+  font-size: 18px;
   padding: 20px 10px 20px 10px;
 }
 nav > ul > li > a:hover {
   cursor: pointer;
 }
+/*header{
+  margin-left: 50px;
+  padding: 20px;
+  background-color: #4aaaa5;
+  float: left;
+  width: 175px;
+  position: relative;
+}*/
+/*nav {
+  position: absolute;
+  left: 750px;
+}*/
+
 
 /*
 =============================================
@@ -127,6 +165,7 @@ footer{
   padding: 10px 50px 10px 50px;
   text-align: center;
   color: white;
+  border-top: 10px solid #4aaaa5;
 }
 
 /*
@@ -154,10 +193,6 @@ h2{
 h3{
   font-size: 20px;
   line-height: 14px;
-}
-#logo-name {
-  color: white;
-  font-weight: 600;
 }
 
 /*
@@ -227,7 +262,7 @@ form > .wrapper {
 Visualization / Debugging
 =============================================
 */
-.container, footer{
+.container {
     border: 1px solid black;
 }
 section{
